@@ -58,7 +58,7 @@ void main()
         count = 0;
         for (int i = 0; i < n; i++)
             arr[i] = 5;
-        quicksort(arr, 0, n - 1, &count);
+        quicksort(arr, 0, n - 1);
         fprintf(f, "%d\t%d\t", n, count);
         // printf("%d\t%d\t", n, count);
 
@@ -66,7 +66,7 @@ void main()
         for (int i = 0; i < n; i++)
             arr[i] = rand() % n;
         count = 0;
-        quicksort(arr, 0, n - 1, &count);
+        quicksort(arr, 0, n - 1);
         fprintf(f, "%d\t", count);
         // printf("%d\t%d\t", n, count);
 
@@ -74,7 +74,7 @@ void main()
         count = 0;
         for (int i = 0; i < n; i++)
             arr[i] = n - i;
-        quicksort(arr, 0, n - 1, &count);
+        quicksort(arr, 0, n - 1);
         fprintf(f, "%d\n", count);
         // printf("%d\t%d\n", n, count);
 
